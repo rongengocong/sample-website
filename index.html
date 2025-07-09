@@ -1,5 +1,5 @@
 <?php 
-    include_once("./php/db.php");
+    include_once("./php/db.html");
 ?>
 
 
@@ -15,7 +15,7 @@
 <body>
 
     <div class="container mt-5">
-        <a href="add.php" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add</a>
+        <a href="add.html" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add</a>
         <div class="card">
             
             <div class="card-body">
@@ -45,8 +45,8 @@
                             <td><?= $row['email'] ?></td>
                             <td><?= $row['username'] ?></td>
                             <td>
-                                <a href="edit.php/php?id=<?= $row['id'] ?>" class="btn btn-primary"><i class="fa-solid fa-edit"></i></a>
-                                <a href="delete.php/php?id=<?= $row['id'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                <a href="edit.html/php?id=<?= $row['id'] ?>" class="btn btn-primary"><i class="fa-solid fa-edit"></i></a>
+                                <a href="delete.html/php?id=<?= $row['id'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                             
                             </td>
                         </tr>
