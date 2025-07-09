@@ -1,8 +1,8 @@
 <?php
-    include_once("./php/db.php");
+    include_once("./php/db.html");
 
     if(!isset($_GET['id'])){
-        header("location: /php_prog/home.php");
+        header("location: /php_prog/index.html");
     }
 
       $getID = !empty($_GET['id']) ? $_GET['id'] : '';
@@ -38,7 +38,7 @@
     <div class="container mt-5">
     <h1 class="text-secondary mb-3">Edit User ID: <?= $getID ?> </h1>
     
-        <a href="home.php" class="btn btn-primary">Back</a>
+        <a href="index.html" class="btn btn-primary">Back</a>
         <div class="card">
             <div class="card-body">
                 <?php
